@@ -1,3 +1,6 @@
+const loader =  document.querySelector('.loader')
+
+loader.style.display = 'flex'
 
 /* get products to the products page */
 
@@ -114,6 +117,10 @@ fetch(api, {
 
         })
     });
+
+    setTimeout(() => {
+        loader.style.display = 'none'
+    }, 2100);
 
 });
  

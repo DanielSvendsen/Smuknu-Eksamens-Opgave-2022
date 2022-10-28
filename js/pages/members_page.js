@@ -1,3 +1,10 @@
+const loader =  document.querySelector('.loader')
+
+loader.style.display = 'flex'
+
+setTimeout(() => {
+    loader.style.display = 'none'
+}, 1500);
 
 /* send new subscribes to api from members page */
 
@@ -51,7 +58,6 @@ form.addEventListener('submit', (e) => {
             errorMessage.parentElement.style.display = 'block'
 
         }
-
 
     });
 })

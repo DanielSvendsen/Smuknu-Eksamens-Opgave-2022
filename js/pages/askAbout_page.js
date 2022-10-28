@@ -1,3 +1,6 @@
+const loader =  document.querySelector('.loader')
+
+loader.style.display = 'flex'
 
 /* get QA to the askAbout page */
 
@@ -49,7 +52,11 @@ fetch(api, {
             elm.classList.toggle('questionActive')
 
         })
+
     });
 
+    setTimeout(() => {
+        loader.style.display = 'none'
+    }, 2100);
 
 });

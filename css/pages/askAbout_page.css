@@ -1,5 +1,8 @@
 /* imports */
 
+/* import loader */
+@import '../repeat/loader/loader.css';
+
 /* import member section */
 @import '../repeat/member_section/member.css';
 

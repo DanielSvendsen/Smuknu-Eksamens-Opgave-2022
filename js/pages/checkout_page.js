@@ -1,3 +1,8 @@
+const loader =  document.querySelector('.loader')
+
+loader.style.display = 'flex'
+
+
 const checkoutBtn = document.querySelectorAll('.checkoutBtn')
 
 /* get products to the checkout page */
@@ -152,3 +157,7 @@ const addOrTake = (elm, addOrTake) => {
     
     
 }
+
+setTimeout(() => {
+    loader.style.display = 'none'
+}, 1400);
