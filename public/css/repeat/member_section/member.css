@@ -1,0 +1,44 @@
+
+/* section member */
+
+section .member .colFirst{
+    margin-top: 5%;
+    width: 50%;
+    float: left;
+}
+
+section .member .colLast img{
+    width: 35%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+section .member .colLast img:last-of-type{
+    margin-right: -19%;
+    margin-left: 5%;
+}
+
+section .member {
+    background: var(--sec);
+    text-align: center;
+    padding: 10% 5%;
+}
+
+section .member p{
+    padding: 20px 0;
+}
+
+section .member button{
+    margin-top: 10px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 728px) {
+    section .member .colFirst{
+        margin-top: 0%;
+        width: 100%;
+        float: none;
+    }
+
+}

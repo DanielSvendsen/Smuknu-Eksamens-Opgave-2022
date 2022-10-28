@@ -1,0 +1,83 @@
+/* imports */
+
+/* import item */
+@import '../repeat/product_section/item.css';
+@import '../repeat/member_section/member.css';
+
+/* section review */
+
+section .reviewContainer .color {
+    top: 30px;
+}
+
+section .reviewContainer {
+    padding: 5%;
+}
+
+section .reviewContainer p {
+    padding: 5%;
+    color: #707070;
+}
+
+section .reviewContainer .column {
+    float: left;
+    width: 80%;
+}
+
+section .reviewContainer .paddingLeft p {
+    padding: 20px 0px 20px 20px;
+}
+
+section .reviewContainer .paddingRight p {
+    padding: 20px 20px 20px 0px;
+}
+
+section .reviewContainer .name {
+    margin-top: 15px;
+}
+
+section .reviewContainer .name,
+section .reviewContainer .review {
+    text-align: center;
+    padding: 0;
+}
+
+section .reviewContainer .colImg {
+    width: 20%;
+}
+
+section .reviewContainer .colImg:last-of-type {
+    text-align: right;
+}
+
+section .reviewContainer span,
+section .reviewContainer .name {
+    font-weight: 700;
+    color: #707070;
+}
+
+section .reviewContainer img {
+    width: 84%;
+    border-radius: 50%;
+    border: 10px solid;
+    border-color: var(--main);
+}
+
+@media only screen and (max-width: 728px) {
+
+    section .reviewContainer {
+        padding: 0 5% 5% 5%;
+        margin-top: -55px;
+    }
+
+    section .reviewContainer p {
+        text-align: center;
+    }
+
+    section .reviewContainer img {
+        max-width: 150px;
+        display: block;
+        margin: auto;
+    }
+
+}

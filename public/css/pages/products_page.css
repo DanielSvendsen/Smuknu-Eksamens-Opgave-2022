@@ -1,0 +1,20 @@
+/* imports */
+
+/* import item */
+@import '../repeat/product_section/item.css';
+@import '../repeat/member_section/member.css';
+
+/* sectionHeader */
+
+section .sectionHeader h1,
+section .sectionHeader p {
+    color: #fff;
+}
+
+section .sectionImgText {
+    background: #000000CC;
+}
+
+section .sectionHeader p {
+    font-weight: 300;
+}

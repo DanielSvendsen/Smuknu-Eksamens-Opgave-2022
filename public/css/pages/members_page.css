@@ -1,0 +1,165 @@
+/* section */
+
+section .sectionImgText {
+    background: #fff;
+}
+
+section .sectionHeader h1 {
+    color: var(--main);
+}
+
+section .sectionHeader p {
+    padding: 0 50px;
+}
+
+/* form error*/
+
+.errorMember {
+    display: none;
+    padding: 5% 5% 0 5%;
+
+}
+
+/* form */
+
+section .formContainer {
+    padding: 5% calc(5% + 20px) 5% 5%;
+    display: block;
+}
+
+section .formContainer form {
+    overflow-x: visible;
+}
+
+section .formContainer label {
+    color: #707070;
+    font-size: 1.3rem;
+}
+
+section .formContainer input,
+section .formContainer textarea {
+    width: 100%;
+    height: 35px;
+    border-radius: 0;
+    border: 1px #707070 solid;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 5px 0 10px 0;
+    padding: 0 10px;
+}
+
+section .formContainer textarea {
+    padding: 10px;
+    height: 200px;
+    resize: none;
+}
+
+section .formContainer input:focus,
+section .formContainer textarea:focus {
+    outline: none;
+    border-color: var(--main);
+}
+
+section .formContainer button {
+    width: 20%;
+    height: 35px;
+    font-size: 0.95rem;
+}
+
+/* popup */
+
+.popupMemberContainer {
+    max-width: 1024px;
+    margin: auto;
+    height: 100%;
+    margin-top: -5px;
+    padding: 50px 0;
+    text-align: center;
+    background: #F7F0F2;
+    justify-content: center;
+    display: none;
+    flex-direction: column;
+    z-index: 50;
+    transition: all 0.4s;
+}
+
+.popupMemberContainer h3 {
+    font-size: 3.6rem;
+}
+
+.popupMemberContainer img {
+    width: 30%;
+    max-width: 375px;
+    border-radius: 50%;
+    border: 5px var(--main) solid;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.popupMemberContainer p {
+    padding: 7px 5%;
+}
+
+.popupMemberContainer p:first-of-type {
+    color: var(--main);
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+.popupMemberContainer .text {
+    font-size: 1.3rem;
+    padding: 50px 5%;
+}
+
+.popupMemberContainer p:last-of-type {
+    padding: 0 5%;
+    font-size: 1.1rem;
+}
+
+.popupMemberContainer a {
+    text-decoration: none;
+}
+
+.popupMemberContainer button {
+    width: 90%;
+}
+
+@media only screen and (max-width: 728px) {
+
+    /* form */
+
+    section .formContainer button {
+        width: 40%;
+        height: 35px;
+        font-size: 0.95rem;
+    }
+
+    /* popup */
+
+    .popupMemberContainer {
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .popupMemberContainer h3 {
+        font-size: 3.4rem;
+    }
+
+    .popupMemberContainer p:first-of-type {
+        font-size: 1.1rem;
+    }
+
+    .popupMemberContainer img {
+        width: 50%;
+        margin: 50px auto;
+    }
+
+    .popupMemberContainer p:last-of-type {
+        padding: 0 5% 50px 5%;
+    }
+
+}

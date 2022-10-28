@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- head -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmukNu</title>
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="css/pages/frontpage_page.css">
+    <link rel="stylesheet" href="css/repeat/extra.css">
+
+    <!-- font-awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+
+    <!-- body -->
+
+<body>
+
+    <!-- header -->
+
+    <header>
+
+        <!-- nav -->
+
+        <nav>
+            <div class="containerFirst">
+                <a href="index.html" class="logo"><img src="img/logo/smuknu_logo.png" alt=""></a>
+                <div class="menuRight">
+                    <a href="subpage/checkout.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <div id="burger-box" onclick="burger()">
+                        <div id="burger" class="burger1"></div>
+                        <div id="burger" class="burger2"></div>
+                        <div id="burger" class="burger3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="Menu">
+                <li class="navLi"><a href="index.html" class="nav">Forside</a></li>
+                <li class="navLi"><a href="subpage/products.html" class="nav">Vores produkter</a></li>
+                <li class="navLi"><a href="subpage/askAbout.html" class="nav">Spørg om Sundhed</a></li>
+                <li class="navLi"><a href="subpage/members.html" class="nav">Bliv Medlem</a></li>
+            </div>
+        </nav>
+        
+    </header>
+
+    <!-- section -->
+
+    <section>
+
+        <!-- sectionHeader -->
+
+        <div class="sectionHeader">
+            <img src="img/headers/front.jpg" alt="">
+            <div class="sectionImgText">
+                <h1>Skønhed <br> for alle</h1>
+                <p>Alt hvad du behøver…</p>
+                <form action="#productFront"><button>Se udvalgte produkter</button></form>
+            </div>
+        </div>
+
+        <!-- sectionBody -->
+
+        <div class="sectionBody" id="productFront">
+            
+            <div>
+                <h2>Udvalgt<br><span>skønhed</span></h2>
+            </div>
+            <div class="itemContainer">
+            </div>
+            <div>
+                <h2><span>Skønheder</span><br>Udtaler</h2>
+            </div>
+            <div class="reviewContainer">
+            </div>
+            <div class="member">
+                <div class="row">
+                    <div class="column colFirst">
+                        <h3>MEDLEM?</h3>
+                        <p>Vær med i kundeklubben for nye videoer, rabatkoder og mere!</p>
+                        <form action="./subpage/members.html"><button>Bliv medlem af kundeklubben</button></form>
+                    </div>
+                    <div class="column colLast pc">
+                        <div class="row memberImg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+
+        <!-- icons -->
+
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        
+        <!-- footer text -->
+        
+        <div class="footerText">
+            <p>mail@smuk.nu</p>
+            <p>+45 123 345 33</p>
+        </div>
+    </footer>
+
+</body>
+
+<script src="js/pages/frontpage_page.js"></script>
+<script src="js/repeat/memberSection/member_section.js"></script>
+<script src="js/repeat/extra.js"></script>
+
+
+</html>
