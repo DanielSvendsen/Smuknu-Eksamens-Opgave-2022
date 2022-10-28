@@ -70,6 +70,7 @@ if (!cart) {
     containerItem.innerHTML = ''
 
     let beforeDisCount
+    let beforeDisCountToFixed
     let price = 0;
     let priceTotal = 0;
     let oldPriceTotal = 0;
@@ -84,7 +85,8 @@ if (!cart) {
             beforeDisCount = Math.round(beforeDiscountPrice * 100 / 100)
             
             oldPriceTotal += beforeDisCount * product.total
-            console.log(beforeDisCount)
+
+            beforeDisCountToFixed = beforeDisCount.toFixed(2)
             
         } else {
             
@@ -93,7 +95,7 @@ if (!cart) {
     }
     
     
-    templateCheckout(product.id, product.name, product.img, price.toFixed(2), product.discountInPercent, product.total, beforeDisCount.toFixed(2))
+    templateCheckout(product.id, product.name, product.img, price.toFixed(2), product.discountInPercent, product.total, beforeDisCountToFixed)
 });
 
 templateTotalPrice(priceTotal.toFixed(2), oldPriceTotal.toFixed(2))
