@@ -3,6 +3,10 @@ const loader =  document.querySelector('.loader')
 
 loader.style.display = 'flex'
 
+setTimeout(() => {
+    loader.style.display = 'none'
+}, 2000);
+
 /* get products to the frontpage */
 
 let api = 'https://smuknu.webmcdm.dk/products'
@@ -116,14 +120,8 @@ fetch(api, {
                 }
     
     
-    
-    
             })
         });
-
-        setTimeout(() => {
-            loader.style.display = 'none'
-        }, 2100);
 
 });
 

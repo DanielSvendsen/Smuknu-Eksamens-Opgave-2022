@@ -4,7 +4,7 @@ loader.style.display = 'flex'
 
 setTimeout(() => {
     loader.style.display = 'none'
-}, 1500);
+}, 2000);
 
 /* send new subscribes to api from members page */
 

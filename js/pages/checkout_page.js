@@ -2,6 +2,10 @@ const loader =  document.querySelector('.loader')
 
 loader.style.display = 'flex'
 
+setTimeout(() => {
+    loader.style.display = 'none'
+}, 2000);
+
 
 const checkoutBtn = document.querySelectorAll('.checkoutBtn')
 
@@ -157,7 +161,3 @@ const addOrTake = (elm, addOrTake) => {
     
     
 }
-
-setTimeout(() => {
-    loader.style.display = 'none'
-}, 1400);

@@ -2,6 +2,12 @@ const loader =  document.querySelector('.loader')
 
 loader.style.display = 'flex'
 
+setTimeout(() => {
+    loader.style.display = 'none'
+}, 2000);
+
+loader.style.display = 'flex'
+
 /* get QA to the askAbout page */
 
 let api = 'https://smuknu.webmcdm.dk/questions'
@@ -54,9 +60,5 @@ fetch(api, {
         })
 
     });
-
-    setTimeout(() => {
-        loader.style.display = 'none'
-    }, 2100);
 
 });
